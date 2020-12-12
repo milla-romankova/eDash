@@ -1,0 +1,25 @@
+.sidebar {
+  &__nav {
+    position: relative;
+    z-index: 5;
+    padding: 90px 40px 34px 60px;
+
+    @media(max-width:1000px) {
+      position: absolute;
+      height: 100vh;
+    }
+  }
+  
+  &__burger {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    z-index: 6;
+  }
+}

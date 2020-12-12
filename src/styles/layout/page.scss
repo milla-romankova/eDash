@@ -9,15 +9,4 @@
   &__content {
     position: relative;
   }
-
-  &__nav {
-    position: relative;
-    z-index: 1;
-    padding: 90px 40px 34px 60px;
-
-    @media(max-width:1000px) {
-      position: absolute;
-      height: 100vh;
-    }
-  }
 }

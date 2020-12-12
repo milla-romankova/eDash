@@ -3,8 +3,6 @@
 
   &--active {
     display: flex;
-    position: relative;
-    z-index: 1;
     padding: 60px 12% 49px;
     border: 1px solid $c-grey;
     box-shadow: $box-shadow-card;

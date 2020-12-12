@@ -13,4 +13,14 @@
   @media(max-width:1000px) {
     padding-top: 100px;
   }
+
+  &__chart {
+    position: relative;
+  }
+
+  &__filters {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 33px;
+  }
 }

@@ -41,9 +41,7 @@
   &--toggle {
     @media(max-width: 1000px) {
       display: flex;
-      position: absolute;
       background-color: $c-main;
-      z-index: 5;
     }
 
     @media(max-width: 700px) {

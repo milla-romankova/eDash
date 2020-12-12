@@ -35,16 +35,13 @@
 
   <body class="page">
     <aside class="page__sidebar sidebar">
-      <div class="sidebar__logo">
-        <img
-          class="logo"
-          src="images/logo.svg"
-          alt="logo"
-        >
-        </img>
-      </div>
+      <img
+        class="sidebar__logo logo"
+        src="images/logo.svg"
+        alt="logo"
+      >
 
-      <div class="burger">
+      <div class="sidebar__burger burger">
         <button class="burger__button burger__button--active">
           <span class="fas fa-bars burger__icon"></span>
         </button>
@@ -53,7 +50,7 @@
         </button>
       </div>
 
-      <nav class="page__nav nav animate__animated animate__fast">
+      <nav class="sidebar__nav nav animate__animated animate__fast">
         <ul class="nav__list nav__list--toggle">
           <li class="nav__item nav__item--active">
             <a
@@ -163,7 +160,7 @@
     </aside>
 
     <main class="content">
-      <div class="filters">
+      <div class="content__filters filters">
         <button
           type="button"
           class="button filters__button"
@@ -249,7 +246,7 @@
         </div>
       </div>
 
-      <div class="chart animate__animated animate__zoomInLeft animate__slow">
+      <div class="content__chart chart animate__animated animate__zoomInLeft animate__slow">
         <div class="chart__wrapper" id="chart__wrapper"></div>
         <div class="chart__legend">
           <div class="chart__legend-item">

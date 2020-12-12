@@ -1,7 +1,8 @@
 .filters {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 33px;
+  &__card {
+    position: relative;
+    z-index: 1;
+  }
 
   &__button {
     transition: color 0.3s;
