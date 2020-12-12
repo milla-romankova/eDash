@@ -1,0 +1,43 @@
+.burger {
+  display: none;
+
+  @media(max-width: 1000px) {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    display: block;
+  }
+
+  &__icon {
+    color: $c-main;
+    font-size: 26px;
+    transition: transform 0.3s;
+
+    &--close {
+      color: $c-white;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__button {
+    position: relative;
+    z-index: 6;
+    margin-top: 30px;
+
+    display: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+}

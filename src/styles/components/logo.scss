@@ -1,0 +1,17 @@
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: $logo-width;
+  height: $logo-height;
+
+  @media(max-width:1000px) {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+    position: absolute;
+    z-index: 6;
+  }
+}

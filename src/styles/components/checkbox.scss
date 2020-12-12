@@ -1,0 +1,37 @@
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-control-input + .custom-control-label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-control-input + .custom-control-label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid $c-grey;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+
+.custom-control-input:checked + .custom-control-label::before {
+  border: 3px solid $c-white;
+  border-radius: 4px;
+  background-color: $c-main;
+  box-shadow: 0 0 0 1px $c-grey;
+  z-index: 4;
+}
+
+.custom-control-input:focus + label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-control-input:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}

@@ -1,0 +1,52 @@
+.filters {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 33px;
+
+  &__button {
+    transition: color 0.3s;
+    width: 128px;
+    height: 36px;
+    font-size: 12px;
+    border-color: $c-light-blue;
+
+    &:hover {
+      background-color: $c-white;
+      color: $c-light-blue;
+    }
+
+    &--active {
+      position: relative;
+      top: 1px;
+      z-index: 3;
+      border: 1px solid $c-grey;
+      border-bottom: $c-white;
+      border-right: $c-white;
+      border-radius: 18px 18px 0 0;
+
+      &::before {
+        position: absolute;
+        content: "";
+        z-index: 3;
+        left: 127px;
+        top: 13px;
+        width: 128px;
+        height: 22px;
+        background-color: $c-white;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        z-index: 4;
+        left: 126px;
+        top: 16px;
+        width: 128px;
+        height: 19px;
+        border-left: 1px solid $c-grey;
+        border-bottom: 1px solid $c-grey;
+        border-radius: 0 0 0 18px;
+      }
+    }
+  }
+}

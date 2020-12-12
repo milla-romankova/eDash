@@ -1,0 +1,66 @@
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $button-width;
+  height: $button-height;
+  border: 1px solid $c-main;
+  border-radius: 52px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $c-main;
+  background-color: $c-white;
+  transition: color 0.3s, background-color 0.3s;
+
+  @media(max-width: 700px) {
+    width: $button-width-svw;
+  }
+
+  @media(max-width: 500px) {
+    width: $button-width;
+  }
+
+  &:hover {
+    color: $c-white;
+    background-color: $c-main;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &__plus {
+    position: relative;
+    width: 12px;
+    height: 12px;
+  }
+
+  &__line {
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: $c-main;
+    border-radius: 5px;
+    transform: rotate(-90deg);
+    outline: none;
+    transition: background-color 0.3s;
+
+    &--y {
+      transform: rotate(0);
+    }
+  }
+}
+
+.filters__button:hover .button__line {
+  background-color: $c-light-blue;
+}
+
+.filters__button--active .button__line--y {
+  display: none;
+}

@@ -1,0 +1,16 @@
+.content {
+  min-height: 100vh;
+  width: 100%;
+  padding: 55px 168px 55px 128px;
+  background-color: $c-white;
+  border-radius: 18px 0 0 18px;
+  overflow: hidden;
+
+  @media(max-width: 1400px) {
+    padding: 40px 4%;
+  }
+
+  @media(max-width:1000px) {
+    padding-top: 100px;
+  }
+}
